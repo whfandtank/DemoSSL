@@ -33,8 +33,9 @@
     
     
     
-    
+    //请求
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //设置https 验证
     manager.securityPolicy = securityPolicy;
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     [manager GET:urlString parameters:nil progress:^(NSProgress * progress){
