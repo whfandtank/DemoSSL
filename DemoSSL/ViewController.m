@@ -19,11 +19,11 @@
     [super viewDidLoad];
     
     
-    NSString *urlString =@"https://shdcapp.wondersgroup.com/mobilemedicalplatform/mobile/yl/hospitals/list";
+    NSString *urlString =@"地址";
     
     
     //SSL验证
-    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"weroundsSSL" ofType:@"der"];
+    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"证书名称" ofType:@"证书类型"];
     NSData * certData =[NSData dataWithContentsOfFile:cerPath];
     NSSet * certSet = [[NSSet alloc] initWithObjects:certData, nil];
     AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
